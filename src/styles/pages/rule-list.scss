@@ -1,0 +1,23 @@
+.rule-list {
+  overflow-x: hidden;
+
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    padding: 10px 20px;
+    border: 1px $color1 solid;
+    &-title {
+      color: $white;
+    }
+
+    &-text {
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+  }
+}

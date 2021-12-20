@@ -1,0 +1,300 @@
+.evogames-page {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.evogames-page .btn {
+  margin: 0 0 10px 20px;
+}
+
+.evolution-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1300px) {
+  .evolution-iframe {
+    display: block;
+    height: 95%;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .evolution-iframe {
+    display: block;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.evo-game {
+  width: 244px;
+  display: inline-block;
+  margin: 0 10px 40px 10px;
+  position: relative;
+  background: #68522c;
+  max-width: 250px;
+  vertical-align: top;
+}
+
+.evo-game__img {
+  min-height: 153px;
+}
+
+.evo-game__name {
+  font-weight: bold;
+}
+
+.evo-game__name p {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  line-height: 14px;
+  padding: 15px 15px;
+  margin: 0;
+}
+
+.evo-game :hover {
+  cursor: pointer;
+}
+
+.evo-game :hover .evo-game__game-button {
+  display: block;
+}
+
+.evo-game__game-button {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  background: #68522c;
+  color: #fff;
+  line-height: 24px;
+  font-size: 12px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.evo-game__img img {
+  width: 244px;
+  height: 150px;
+}
+
+.evo-game span {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: bold !important;
+  height: 18px;
+  line-height: 18px;
+  background: #ffc40e;
+  padding: 0 7px 0 28px;
+  font-weight: 500;
+  color: #24272d;
+}
+
+.evo-game span i {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  line-height: 0;
+  width: 20px;
+  font-size: 11px;
+  text-align: center !important;
+}
+
+.evo-game span i:after {
+  float: none;
+}
+
+.evo-game span span:after {
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  border-width: 9px 4px;
+  border-style: solid;
+  border-color: #ffc40e transparent transparent #ffc40e;
+}
+
+.evo-game__results {
+  background-color: #555;
+  color: white;
+  padding: 5px;
+}
+
+.evo-game__limit {
+  position: absolute;
+  top: 10px;
+  left: -4px;
+  z-index: 2;
+  height: 18px;
+  line-height: 18px;
+}
+
+.evo-game__limit span {
+  position: relative;
+  display: inline-block;
+  padding: 0 7px;
+  background: #f2f5f7;
+  font-weight: 600;
+  font-size: 12px;
+  color: #1a1a1a;
+}
+
+.evo-game__limit span:after {
+  position: absolute;
+  content: "";
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  border-width: 9px 4px;
+  border-style: solid;
+  border-color: #f2f5f7 transparent transparent #f2f5f7;
+}
+
+.evo-game__game-result {
+  position: absolute;
+  left: 0;
+  bottom: 36px;
+  padding: 0;
+  width: 100%;
+  background: #121416;
+}
+
+.evo-game__game-result + p {
+  padding: 32px 15px 10px 15px;
+}
+
+.evo-game__game-result .evo-game__gri {
+  padding: 0 5px;
+  text-align: center;
+}
+
+.evo-game__game-result .evo-game__gri span {
+  display: inline-block;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 12px;
+  margin: 1px 2px;
+}
+
+.evo-game__game-result .evo-game__gri .one_block {
+  display: inline-block;
+  width: 18px;
+  height: 40px;
+  background: transparent;
+}
+
+.evo-game__game-result .evo-game__gri .one_block span :after {
+  display: none;
+}
+
+.evo-game__game-result .evo-game__gri .one_block :after {
+  display: none;
+}
+
+.evo-game__game-result .evo-game__gri .one_block2 {
+  display: inline-block;
+  width: 18px;
+  height: 60px;
+  background: transparent;
+}
+
+.evo-game__game-result .evo-game__gri .one_block2 :after {
+  display: none;
+}
+
+.evo-game__game-result .evo-game__gri .one_block2 span {
+  margin: 0 2px;
+}
+
+.evo-game__game-result .evo-game__gri .one_block2 span :after {
+  display: none;
+}
+
+.evo-game__game-result .evo-game__gri .one_block2 span :first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.evo-game__game-result .evo-game__gri .one_block2 span :last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.evo-game__game-result .evo-game__gri .round {
+  border-radius: 2px;
+}
+
+.evo-game__game-result .evo-game__gri .bac_Dn {
+  background: #ffffff;
+  color: #333333;
+}
+
+.evo-game__game-result .evo-game__gri .bac_Tr {
+  background: #ffffff;
+  color: #333333;
+}
+
+.evo-game__game-result .evo-game__gri .bac_T {
+  background: #03a84e;
+  color: #ffffff;
+}
+
+.evo-game__game-result .evo-game__gri .bac_P {
+  background: #f32633;
+  color: #ffffff;
+}
+
+.evo-game__game-result .evo-game__gri .bac_B {
+  background: #41c2f2;
+  color: #ffffff;
+}
+
+.evo-game__game-result .evo-game__gri .b_g {
+  background: #0eab63;
+}
+
+.evo-game__game-result .evo-game__gri .b_r {
+  background: #ef1552;
+}
+
+.evo-game__game-result .evo-game__gri .b_b {
+  background: #24272d;
+  color: #fff;
+}
+
+.evo-game .b_w {
+  background: #ffffff;
+  color: #333333;
+}
+
+.evo-game .b_hz {
+  background: #e5e5e5;
+  color: #333333;
+}
+
+.evo-games__filter {
+  margin-bottom: 30px;
+}
+
+.nux__image {
+  height: auto !important;
+  width: auto !important;
+  max-width: 100%;
+}
+/*# sourceMappingURL=game.css.map */

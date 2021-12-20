@@ -1,0 +1,38 @@
+.games__btns-top {
+  padding: 10px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.games__btns-top button {
+  text-transform: uppercase;
+}
+
+.team-teams {
+  position: relative;
+}
+
+.team-teams__images {
+  position: absolute;
+  top: 10px;
+}
+
+.team-teams__images__left {
+  left: 6px;
+}
+
+.team-teams__images__left img {
+  margin: 0 10px 0 0;
+}
+
+.team-teams__images__right {
+  right: 6px;
+}
+
+.team-teams__images__right img {
+  margin: 0 0 0 10px;
+}
+/*# sourceMappingURL=matches.css.map */

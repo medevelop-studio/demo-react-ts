@@ -1,0 +1,169 @@
+.table {
+  overflow-x: scroll;
+  white-space: nowrap;
+  table {
+    width: 100%;
+    text-align: center;
+    color: #bbb;
+    border-collapse: collapse;
+  }
+  .bet-table__bet {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    span {
+      min-width: 25px;
+      height: 25px;
+      margin: 0 3px;
+      padding: 3px;
+      background-color: $black0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid transparent;
+      span {
+        width: 23px;
+        height: 23px;
+        margin: 0 3px;
+        background-color: $black0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        &:nth-child(n).bet-table__option-won {
+          border-color: #224300;
+        }
+        &:nth-child(n).bet-table__won {
+          background-color: green;
+          border: 1px solid $color1;
+        }
+        &:nth-child(n).bet-table__lost {
+          border: 1px solid $color1;
+          background-color: #440000;
+        }
+      }
+      .selected {
+        border: 1px solid $color1;
+      }
+
+      .bet-table__option-won {
+        border-color: #224300;
+      }
+    }
+  }
+
+  .bet-table__teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      padding: 0 15px;
+    }
+    .bet-table__teams__lost {
+      opacity: 0.3;
+    }
+    .bet-table__teams__left,
+    .bet-table__teams__right {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .bet-table__teams__left {
+      justify-content: flex-end;
+      img {
+        margin: 0 10px 0 0;
+      }
+    }
+
+    .bet-table__teams__right {
+      img {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  .bet-table__mobile-view {
+    text-align: left;
+    span {
+      padding: 0 15px 0 0;
+    }
+  }
+
+  .bet-table__mobile-view__teams {
+    max-width: 150px;
+    width: 100%;
+  }
+
+  thead {
+    background-color: $grey1;
+    th {
+      padding: 8px;
+    }
+  }
+
+  tbody {
+    background-color: $black;
+  }
+
+  td {
+    padding: 8px;
+    position: relative;
+  }
+
+  tr:nth-child(even) {
+    background-color: $black0;
+    .bet-table__bet {
+      span {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.selected-option {
+  border: 1px solid $color1 !important;
+}
+
+.tbody-tr-hover {
+  tbody {
+    tr {
+      &:hover {
+        background-color: $color2 !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.tr-hover {
+  &:hover {
+    background-color: $color2 !important;
+    cursor: pointer;
+  }
+}
+
+.tbody-height {
+  thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  tbody {
+    display: block;
+    overflow: auto;
+  }
+}
+
+.loginHistory {
+  cursor: pointer;
+  user-select: none;
+  margin-left: 15px;
+}
+
+.loginHistoryIcon {
+  width: 15px;
+  height: 15px;
+}

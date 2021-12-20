@@ -1,0 +1,84 @@
+.table-modal {
+  .create-game__content {
+    margin: 30px 0 0 0;
+    padding: 0 50px;
+    display: flex;
+  }
+
+  .create-game__left-side,
+  .create-game__right-side {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .create-game__left-side {
+    // margin: 0 20px 0 0;
+  }
+
+  .create-game__right-side {
+    position: relative;
+    z-index: 3;
+    .modal-container__inputs {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      .input-field {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.modal-container__inputs--half {
+  .input-field {
+    width: 50%;
+  }
+}
+
+.table-area__select-match {
+  position: relative;
+  tr {
+    cursor: pointer;
+  }
+}
+
+.create-game__selected-match {
+  background-color: $color2 !important;
+}
+
+.table-area__select-match--disabled {
+  font-size: 30px;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  span {
+    padding: 10px;
+    background-color: $black;
+  }
+}
+
+.create-game__blocks {
+  height: 50px;
+  margin: 30px 0 0 0;
+  border: 1px solid $color1;
+  display: flex;
+  .create-game__block {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &.create-game__block--selected {
+      background-color: $color1;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.rtl {
+  direction: rtl;
+}
+
+.menu-links--rtl {
+  a,
+  .menu-links__logout--rtl {
+    &:hover {
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 35px 0 35px 15px;
+        border-color: transparent transparent transparent $color1;
+        position: absolute;
+        bottom: 0;
+        right: auto;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}

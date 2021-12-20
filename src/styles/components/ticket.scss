@@ -1,0 +1,90 @@
+.my-tickets__group {
+  .ticket {
+    margin: 20px 0 0 0;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  .table-modal {
+    max-width: 100%;
+  }
+}
+
+.ticket {
+  .modal-container__btns {
+    margin: 20px;
+  }
+}
+
+.my-tickets__header {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 10px;
+  color: $color1;
+  border-bottom: 1px solid $color1;
+}
+
+.my-bet-count,
+.bet-ticket__amount {
+  color: $color1;
+}
+
+.ticket--lost {
+  .my-bet-count,
+  .bet-ticket__amount {
+    color: $grey4;
+  }
+}
+
+.card-line__header--switch {
+  cursor: pointer;
+}
+
+.card-line__header--show {
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 35px 15px 35px;
+    border-color: transparent transparent $color1 transparent;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+  }
+}
+
+.card-line__header--less {
+  &:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 35px 0 35px;
+    border-color: $color1 transparent transparent transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translate(-50%, 0%);
+  }
+}
+
+.team-teams__name, .team-teams__league-name {
+  vertical-align: super;
+}
+
+.team-teams__images-league {
+  img {
+    margin-right: 6px;
+  }
+}
+.bet-table__league-logo {
+  img.logo-image {
+    max-width: 50px;
+    width: 40px;
+  }
+}
+
+

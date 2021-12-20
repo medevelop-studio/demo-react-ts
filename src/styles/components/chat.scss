@@ -1,0 +1,29 @@
+.chat-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 40px 0;
+  position: relative;
+  .chat__messages-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .chat__input-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .chat__message-container {
+    margin: 0 0 4px 0;
+  }
+
+  .chat__username {
+    color: $white;
+  }
+
+  .chat__message {
+    color: $grey4;
+  }
+}

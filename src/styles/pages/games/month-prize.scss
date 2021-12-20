@@ -1,0 +1,35 @@
+.month-prize-page {
+  width: 100%;
+  .games__header {
+    .right-side {
+      text-transform: capitalize;
+      color: $color1;
+    }
+  }
+
+  .my-tickets__content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.month-prize__content {
+  height: 100%;
+  display: flex;
+}
+
+.month-prize__top-players {
+  width: 300px;
+  height: 100%;
+  background-color: $grey1;
+  .table {
+    border-top: 1px solid $color1;
+  }
+}
+
+.top-players__header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0 15px 0;
+}

@@ -1,0 +1,21 @@
+.loginHistoryWrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .selectedUser {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 18px;
+        padding: 20px;
+    }
+    .tableCell {
+        display: flex;
+        &:nth-child(2n) {
+            background: $black0;
+        }
+    }
+   .tableItem {
+       padding: 10px 25px;
+   }
+}

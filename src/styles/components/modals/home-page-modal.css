@@ -1,0 +1,14 @@
+.home-page-modal .modal-container__inputs {
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home-page-modal .modal-container__inputs .input-field {
+  max-width: 400px;
+}
+/*# sourceMappingURL=home-page-modal.css.map */

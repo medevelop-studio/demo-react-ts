@@ -1,0 +1,18 @@
+footer {
+  background-color: $grey1;
+  position: relative;
+}
+
+.footer__inner {
+  max-width: 1420px;
+  margin: auto;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    font-size: 20px;
+    margin: 15px 0;
+    display: block;
+    color: $white;
+  }
+}

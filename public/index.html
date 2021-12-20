@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="example" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>example</title>
+
+  <style>
+    #viewport-wrapper {
+      width: 100%;
+      height: 100%;
+      max-width: 1420px;
+      max-height: 600px;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    #viewport {
+      transform-origin: 0 0;
+      position: absolute;
+    }
+
+  </style>
+</head>
+
+<body class="scrollbar-style"">
+      <div id=" root">
+  </div>
+  <div id="modal-root"></div>
+
+  <script src="/assets/javascript/jquery.min.js"></script>
+  <script src="/assets/javascript/marquee.min.js"></script>
+  <script src="/assets/javascript/swiper.min.js"></script>
+  <script src="/assets/javascript/mobile-detect.js"></script>
+  <script>window.md = new MobileDetect(window.navigator.userAgent);</script>
+
+  <script>
+    window.resizeViewport = function () {
+      const viewport = $("#viewport");
+      const viewportWrapper = $("#viewport-wrapper");
+
+      const width = 1420;
+      const height = 600;
+      const scale = 1;
+
+      const diffHeight = (100 / height) * (viewportWrapper.innerHeight() - height);
+      const finalScaleHeight = scale + (scale / 100) * diffHeight;
+
+      const diffWidth = (100 / width) * (viewportWrapper.innerWidth() - width);
+      const finalScaleWidth = scale + (scale / 100) * diffWidth;
+
+      const top = (viewportWrapper.innerHeight() - height * finalScaleWidth) / 2;
+      const left = (viewportWrapper.innerWidth() - width * finalScaleHeight) / 2;
+
+      viewport.attr(
+        "style",
+        `
+          transform: scale(${finalScaleHeight > finalScaleWidth ? finalScaleWidth.toFixed(3) : finalScaleHeight.toFixed(3)});
+          top: ${top <= 0 ? 0 : top}px;
+          left: ${left <= 0 ? 0 : left}px
+        `
+      );
+    };
+
+    $(window).resize(() => {
+      window.resizeViewport();
+    });
+  </script>
+
+  <!-- Start of Zendesk Widget script -->
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=79d29542-69f0-466f-bfab-922b69937546"> </script>
+  <!-- End of Zendesk Widget script -->
+</body>
+
+</html>
+
+</html>

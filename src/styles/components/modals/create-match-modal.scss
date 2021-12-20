@@ -1,0 +1,138 @@
+.create-match-modal {
+  max-width: 800px;
+  input {
+    color: $color1;
+  }
+  .create-match__content {
+    margin: 30px 0 0 0;
+    display: flex;
+  }
+
+  .create-match__left-side,
+  .create-match__right-side {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .create-match__left-side {
+    // margin: 0 20px;
+  }
+
+  .modal-container__inputs {
+    margin: 0;
+  }
+
+  .modal-container__btns {
+    margin: 30px 0 0 0;
+  }
+}
+
+.create-match__type-1 {
+  display: flex;
+  justify-content: space-between;
+  div {
+    font-size: 16px;
+    width: 40%;
+    height: 40px;
+    color: $grey4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $grey4;
+    border-right: none;
+    &:last-child {
+      border-right: 1px solid $grey4;
+    }
+  }
+}
+
+.create-match__options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.create-match__option {
+  font-size: 16px;
+  min-width: 40px;
+  height: 40px;
+  margin: 10px 10px 0 0;
+  padding: 10px;
+  color: $grey4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $grey4;
+}
+
+.create-match__option__delete {
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 10px;
+  color: $grey1;
+  background-color: $grey4;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+// Datepicker styles
+#react-datepicker-popper__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: $black0;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: $black0;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $white;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.datepicker__input {
+  border-bottom: 1px solid $color1;
+}
+
+.datepicker__input__error {
+  border-bottom: 1px solid #b71c1c;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  input {
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    color: $color1;
+    background: none;
+    position: relative;
+    z-index: 1;
+    &::placeholder {
+      color: $grey4;
+    }
+  }
+}

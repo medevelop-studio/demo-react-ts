@@ -1,0 +1,127 @@
+.manage-users__tabs {
+  height: 50px;
+  padding: 0 10px;
+  background-color: $grey1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color1;
+  .manage-users__tab {
+    font-size: 30px;
+    font-weight: 700;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+  }
+  .tab--active {
+    height: calc(100% + 10px);
+    margin: -10px 0 0 0;
+    background-color: $color1;
+  }
+}
+
+.manage-users-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.manage-users__balance-big-padding {
+  padding: 0 130px 0 8px !important;
+}
+
+.user-ban__btn {
+  text-align: center;
+  line-height: 15px;
+  font-weight: 700;
+  width: 25px;
+  height: 25px;
+  color: $grey4;
+  padding: 3px;
+  position: absolute;
+  top: -4px;
+  left: -25px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.manage-users__name-container--allow-expanded {
+  .user-ban__btn {
+    left: -40px;
+  }
+  .manage-users__name {
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover {
+      background-color: $grey1;
+    }
+  }
+}
+
+.date-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > div {
+    position: relative;
+    padding: 0 30px 0 0;
+  }
+  img {
+    position: absolute;
+    right: 4px;
+    top: -1px;
+  }
+}
+
+.manage-users__name-container {
+  position: relative;
+}
+
+.manage-users__name-container--banned {
+  .manage-users__name {
+    color: $grey4 !important;
+  }
+}
+
+.manage-users__triangle:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent $color1;
+  position: absolute;
+  left: -14px;
+  top: 4px;
+}
+
+.manage-users__triangle--expanded:after {
+  transform: rotate(90deg);
+}
+
+.cashback-btn-container, .limit-btn-container, .scedual-payment-btn-container {
+  color: $color2;
+  cursor: pointer;
+}
+
+.scedual-payment__text-field {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 20px 10px;
+
+  span {
+    font-size: 18px;
+  }
+
+  span + span {
+    margin-top: 10px;
+  }
+}
+
+.searched-user {
+  background-color: $color2 !important;
+}

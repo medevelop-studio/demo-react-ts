@@ -1,0 +1,26 @@
+.table-modal {
+  max-width: 900px;
+  padding: 30px 0 !important;
+  input {
+    color: $color1;
+  }
+
+  .modal-container__inputs {
+    margin: 0;
+  }
+
+  .modal-container__btns {
+    margin: 30px 0 0 0;
+    padding: 0 20px;
+  }
+
+  .table-area-modal {
+    margin: 30px 0;
+    border-top: 1px solid $color1;
+    border-bottom: 1px solid $color1;
+    tbody {
+      min-width: 600px;
+      max-height: 300px;
+    }
+  }
+}

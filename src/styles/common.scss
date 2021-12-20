@@ -1,0 +1,50 @@
+@import "variables";
+
+@import "./main.scss";
+@import "./pagination.scss";
+
+@import "./components/chat.scss";
+@import "./components/modal-window.scss";
+@import "./components/buttons.scss";
+@import "./components/inputs.scss";
+@import "./components/elements.scss";
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/table.scss";
+@import "./components/ticket.scss";
+@import "./components/sidebar.scss";
+@import "./components/mobile/mobile-menu.scss";
+@import "./components/modals/table-modal.scss";
+@import "./components/modals/create-match-modal.scss";
+@import "./components/modals/create-game-modal.scss";
+@import "./components/modals/home-page-modal.scss";
+@import "./components/modals/bet-modal.scss";
+@import "./components/modals/login-modal.scss";
+@import "./components/modals/create-one-on-one-modal.scss";
+@import "./components/tiles.scss";
+@import "./components/week-filter.scss";
+
+@import "./pages/home.scss";
+@import "./pages/my-bets.scss";
+@import "./pages/balance.scss";
+@import "./pages/manage-users.scss";
+@import "./pages/personal-info.scss";
+@import "./pages/statistics.scss";
+@import "./pages/logos.scss";
+@import "./pages/games/matches.scss";
+@import "./pages/games/games.scss";
+@import "./pages/games/best-at-table.scss";
+@import "./pages/games/checkpoint.scss";
+@import "./pages/games/month-prize.scss";
+@import "./pages/games/one-on-one.scss";
+@import "./pages/rules.scss";
+@import "./pages/rule-list.scss";
+@import "./pages/evoGames/game.scss";
+@import "./pages/slots.scss";
+@import "./pages/live-casino.scss";
+@import "./pages/ticker.scss";
+@import "./pages/chance.scss";
+@import "./pages/login-history.scss";
+
+@import "./right-to-left.scss";
+@import "./media-queries.scss";

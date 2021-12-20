@@ -1,0 +1,47 @@
+.statistics-page {
+  .card-line__footer {
+    color: $color1;
+    justify-content: flex-end;
+  }
+
+  .transactions-filter {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+
+    .input-filter-login {
+      border-radius: 15px;
+    }
+    .select-filter-type {
+      margin-left: 10px;
+      padding: 10px 25px;
+      border-radius: 15px;
+    }
+  }
+  .td-sticky {
+    position: absolute;
+    height: 32px;
+  }
+}
+
+.statistics__branch {
+  .branch__head {
+    text-align: center;
+    padding: 10px;
+    color: $grey4;
+  }
+}
+
+.statistics {
+  &__filter {
+    display: flex;
+  }
+}
+
+.provider-statistics__total-table {
+  color: #cc0000;
+}
+.provider-statistics__table {
+  position: relative;
+}

@@ -1,0 +1,10 @@
+.ticker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ticker .input-field {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=ticker.css.map */

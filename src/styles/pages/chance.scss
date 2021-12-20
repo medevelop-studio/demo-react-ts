@@ -1,0 +1,104 @@
+.chance {
+  &__play {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__switch-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  &__bet-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 425px) {
+      & {
+        margin-bottom: 20px;
+      }
+
+      & > .btn {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  & > .btn {
+    align-self: center;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+
+    .input-field {
+      width: auto;
+      margin-right: 10px;
+    }
+  }
+
+  &__card-field {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 780px) {
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 0 25%;
+    padding: 0 10px;
+
+    &-image {
+      height: 352px;
+      width: 230px;
+      margin: 20px auto 40px auto;
+    }
+
+    @media screen and (max-width: 780px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__button {
+    &_active {
+      box-shadow: 0 0 20px $color1;
+    }
+  }
+
+  .compared-value {
+    padding: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.timer {
+  color: #fff;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.timerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.setResult {
+  color: #000;
+  font-size: 18px;
+  background: #e6bd72;
+  padding: 8px;
+  font-weight: 700;
+  border-radius: 4px;
+}

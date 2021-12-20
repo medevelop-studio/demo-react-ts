@@ -1,0 +1,14 @@
+.table-area__select-bet .bet-table__bet span {
+  cursor: pointer;
+}
+
+.view-ticket {
+  max-width: 900px;
+  width: 100%;
+}
+
+.make-a-bet__input {
+  max-width: 400px;
+  margin: 30px auto 0 auto;
+}
+/*# sourceMappingURL=bet-modal.css.map */

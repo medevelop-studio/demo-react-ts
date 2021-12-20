@@ -1,0 +1,63 @@
+.slot-item {
+  display: inline-block;
+  text-align: center;
+}
+
+.slot-item h3 {
+  margin-top: 2px;
+}
+
+.slot-item:hover {
+  cursor: pointer;
+}
+
+.nux {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0;
+}
+
+.nux__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.nux__iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.nux .btn {
+  background-color: #e6bc73;
+}
+
+.nux .btn:hover {
+  -webkit-box-shadow: 0 0 10px #e6bc73;
+          box-shadow: 0 0 10px #e6bc73;
+}
+
+.tvbet-page {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tvbet-page {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tvbet-page {
+    margin-top: 20px !important;
+  }
+}
+/*# sourceMappingURL=slots.css.map */

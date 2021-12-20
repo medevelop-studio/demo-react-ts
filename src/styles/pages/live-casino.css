@@ -1,0 +1,22 @@
+.live-casino__page__tile {
+  max-width: 300px;
+  text-align: center;
+}
+
+.live-casino__page__tile img {
+  max-width: 100%;
+}
+
+.live-casino__provider-name {
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #cfa458;
+}
+
+.play-btn {
+  display: block;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=live-casino.css.map */

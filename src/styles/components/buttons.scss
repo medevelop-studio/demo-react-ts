@@ -1,0 +1,36 @@
+.btn {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  position: relative;
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+}
+
+.gold-btn {
+  font-size: 20px;
+  color: $black;
+  background-color: $color1;
+}
+
+.empty-gold-btn {
+  font-size: 20px;
+  color: $color1;
+  background-color: $black;
+  border: 1px solid $color1;
+}
+
+.grey-btn {
+  font-size: 20px;
+  color: $grey1;
+  background-color: $grey4;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

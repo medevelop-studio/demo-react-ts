@@ -1,0 +1,64 @@
+.input {
+  font-size: 18px;
+}
+
+.input-field {
+  width: 100%;
+  position: relative;
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    background: none;
+    position: relative;
+    z-index: 1;
+    &::placeholder {
+      color: rgb(133, 128, 128);
+    }
+  }
+}
+
+.input-field__error {
+  input {
+    border: 1px solid #b71c1c;
+  }
+}
+
+.gold-input {
+  color: $white;
+  border: 1px solid $color1;
+}
+
+.grey-input {
+  color: $white;
+  border: 1px solid $grey4;
+}
+
+.input-filter {
+  position: relative;
+  .input-filter__list {
+    width: 100%;
+    max-height: 175px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    overflow: auto;
+  }
+  .input-filter__list__item {
+    font-size: 16px;
+    height: 35px;
+    padding: 0 10px;
+    color: $color1;
+    background-color: $black1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: $grey4;
+    }
+    img {
+      margin: 0 6px 0 0;
+    }
+  }
+}

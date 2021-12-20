@@ -1,0 +1,15 @@
+.balance__header {
+  font-size: 25px;
+  height: 110px;
+  padding: 0 10px;
+  background-color: $grey1;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $color1;
+
+  .header__balance {
+    font-weight: 700;
+    margin: 0 30px;
+    color: $color1;
+  }
+}

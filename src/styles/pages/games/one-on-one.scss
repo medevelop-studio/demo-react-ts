@@ -1,0 +1,64 @@
+.one-on-one-page {
+  width: 100%;
+  .add-content__btns-top {
+    padding: 0;
+  }
+}
+
+.one-on-one__content {
+  display: flex;
+  height: calc(100% - 70px);
+  overflow: auto;
+}
+
+.one-on-one__left-side {
+  width: 50%;
+  overflow: auto;
+}
+
+.one-on-one__right-side {
+  width: 50%;
+  overflow: auto;
+}
+
+.one-on-one__games-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.one-on-one__table-area {
+  height: 50%;
+  overflow: auto;
+}
+
+.one-on-one__chat-container {
+  height: 50%;
+  border-top: 1px solid $color2;
+}
+
+.one-one-one__selected-option {
+  color: $grey4;
+  border: 1px solid $grey4 !important;
+}
+
+.one-one-one__selected-option--my-bet {
+  color: $grey4;
+  border: 1px solid $color1 !important;
+}
+
+.one-one-one__price {
+  background-color: $color2 !important;
+}
+
+.one-on-one__request {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+  .modal-container__btns {
+    margin: 5px 0 0 0;
+  }
+  button {
+    font-size: 16px;
+  }
+}

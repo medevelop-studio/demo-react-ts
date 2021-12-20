@@ -1,0 +1,27 @@
+.week-filter {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid $color1;
+    border-radius: 14px;
+    font-size: 14px;
+    color: $color1;
+    font-weight: 500;
+  }
+
+  @media only screen and (max-width: 425px) {
+    flex-wrap: wrap;
+
+    &__date {
+      flex: 1 0 100%;
+      order: -1;
+      margin-bottom: 20px;
+    }
+  }
+}

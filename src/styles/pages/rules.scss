@@ -1,0 +1,27 @@
+.rules {
+  overflow-x: hidden;
+
+  &__head {
+    display: flex;
+  }
+}
+.rules-form {
+  max-width: 100%;
+  border: 1px solid $color1;
+
+  .editor-content {
+    height: 462px;
+    padding: 0 10px;
+    overflow: scroll;
+
+    div {
+      margin: 0;
+    }
+  }
+
+  .btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+  }
+}
